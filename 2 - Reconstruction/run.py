@@ -1,3 +1,5 @@
+Author: Elizabeth N.
+
 import os
 import shutil
 
