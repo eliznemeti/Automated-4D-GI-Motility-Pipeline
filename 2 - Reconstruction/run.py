@@ -4,8 +4,8 @@ import os
 import shutil
 
 # Path to the main directory containing subject folders
-source_dir = '/Users/elizabethnemeti/Desktop/roberta-per-subject-data-2d'
-output_dir = '/Users/elizabethnemeti/Desktop/LOOCV-Splits'
+source_dir = '/Users/roberta-per-subject-data-2d'
+output_dir = '/Users/LOOCV-Splits'
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)

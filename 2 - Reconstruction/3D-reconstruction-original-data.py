@@ -7,8 +7,8 @@ from PIL import Image
 from tqdm import tqdm
 
 # Path to the folder containing the 2D slices
-input_folder = '/Users/elizabethnemeti/Desktop/2D-roberta-data'
-output_folder = '/Users/elizabethnemeti/Desktop/Reconstructed-3D-original'
+input_folder = '/Users/2D-roberta-data'
+output_folder = '/Users/Reconstructed-3D-original'
 os.makedirs(output_folder, exist_ok=True)
 
 # Function to parse the file name and extract subject, time, and slice info

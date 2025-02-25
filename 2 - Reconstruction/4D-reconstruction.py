@@ -5,8 +5,8 @@ import numpy as np
 import os
 
 # Path to the main directory containing subject folders
-input_dir = '/Users/elizabethnemeti/Desktop/Reconstructed-3D-predicted'
-output_dir = '/Users/elizabethnemeti/Desktop/Reconstructed-4D-predicted'
+input_dir = '/Users/Reconstructed-3D-predicted'
+output_dir = '/Users/Reconstructed-4D-predicted'
 
 # Ensure the output directory exists
 os.makedirs(output_dir, exist_ok=True)

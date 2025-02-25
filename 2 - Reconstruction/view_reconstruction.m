@@ -1,7 +1,7 @@
 Author: Elizabeth N.
 
 % Path to the reconstructed .nii file
-dataPath = '/Users/elizabethnemeti/Desktop/reconstructed-og/FD_027/';
+dataPath = '/Users/reconstructed-og/FD_027/';
 reconstructedFile = 'FD_027_time_1_reconstructed.nii';
 
 % Load the NIfTI file
