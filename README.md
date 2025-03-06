@@ -1,9 +1,10 @@
-***AN AUTOMATED SEGMENTATION PIPELINE FOR QUANTIFYING GASTRIC MOTILITY IN HUMANS USING 4D CINE MAGNETIC RESONANCE IMAGING***
+# ***AN AUTOMATED SEGMENTATION PIPELINE FOR QUANTIFYING GASTRIC MOTILITY IN HUMANS USING 4D CINE MAGNETIC RESONANCE IMAGING***
+
 *Abstract Accepted to DDW '25*
 
-**Pipeline Documentation**
+## **Pipeline Documentation**
 
-**Preprocessing**
+#### **Preprocessing**
 
 
 - Use this file to view the temporal image and mask together over time: `/view-temporal-images-and-masks.m`
