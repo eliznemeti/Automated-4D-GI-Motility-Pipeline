@@ -1,0 +1,9 @@
+*.jpg
+*.jpeg
+*.pyc
+*.npy
+*.npz
+*.csv
+*.pt
+data
+scripts/results/*
