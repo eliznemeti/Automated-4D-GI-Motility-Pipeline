@@ -6,7 +6,6 @@
 
 #### **Preprocessing**
 
-
 - Use this file to view the temporal image and mask together over time: `/view-temporal-images-and-masks.m`
 - Then use this file to check keys and dimensions etc: `/check-file-details.m`
 - Break down ALL original 4d file into individual frames or slices with this file `make-cine-mri-pngs.m`
@@ -22,7 +21,7 @@ Optional Contrast/Brightness Enhancing
 - Calculate RMS contrast for each image 
 - Use a grid search algorithm to go over different brightness and contrast levels
   
-**Synthetic Data Generation with SINGAN-seg**
+#### **Synthetic Data Generation with SINGAN-seg**
 
 1. Before running synthetic data generation, the input must be processed correctly: 
 - The data needs to be pre-processed into RGBA (Red, Green, Blue, Alpha) format. The first three channels (RGB) contain the image information, while the fourth channel (Alpha) can represent the binary mask (the ground truth segmentation of the stomach)
@@ -52,7 +51,7 @@ To LOOP over the entire dataset, run the script (with no additional parameters, 
 - You need to change the dimension of the image because synthetic data is RBG, but the expected image must be grayscale. The color format or mode difference in the mask files can be a problem if the masks and images have inconsistent channel dimensions (e.g., single-channel grayscale for masks vs. multi-channel RGBA for images).
 - Now the data is ready for segmentation in the `RandomSamples_ready` folder.
 
-**UNET Segmentation**
+#### **UNET Segmentation**
 
 1. Download `Run-UNET` codebase (also called `gsoc-2024`)
 2. Conda activate `TORCHUNET` environment and make sure all packages are installed
@@ -75,7 +74,8 @@ To LOOP over the entire dataset, run the script (with no additional parameters, 
      - A figure showing images for each batch/epoch for a visual sanity check
      - Once completed, a .csv is made containing all dice scores for easy read over
 
-**Reconstruction**
+#### **Reconstruction**
+
 There are two steps to reconstruction. 
 1. Run the 2D masks (just masks) through 3D reconstruction to get the volumes at each time point individually with `3D-reconstruction.py`, 
 2. Then run that folder `Reconstructed-3D` through `4D-reconstruction.py`, which will combine all the time points so we have x1 4D volume over time for each subject, now saved in the folder Reconstructed-4D.
@@ -91,7 +91,8 @@ When loading the file to ITK-snap, make sure you select “NIFTI” as the type.
 - To add the overlap of either the original volume or the segmented volume, open the next file as an “additional image” and select “overlay”. 
 - You will need to select it from the sidebar and likely change its color map, as seen below. This way, you can easily compare the original and segmented volumes to see if it’s a faithful reconstruction over time.
 
-**Motility**
+#### **Motility**
+
 - Roberta's original (manual pipeline) code is this file: `GUTBRAIN_MOTILITY.m`
   - Follows these steps:
   1. Load and Preprocess the Data: Reads a 4D stomach volume and smooths the data to reduce noise. Each time point is normalized for consistent analysis.
