@@ -75,6 +75,8 @@ To LOOP over the entire dataset, run the script (with no additional parameters, 
      - Only the best model to save memory space (tracks best validation score)
      - A figure showing images for each batch/epoch for a visual sanity check
      - Once completed, a .csv is made containing all dice scores for easy read over
+   
+Pretrained models can be found in the google drive. 
 
 #### **Reconstruction**
 
