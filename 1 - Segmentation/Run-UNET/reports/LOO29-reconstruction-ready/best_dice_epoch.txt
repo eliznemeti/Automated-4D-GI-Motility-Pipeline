@@ -1,2 +1,0 @@
-Best Epoch: 14
-Dice Coefficient: 0.7198
