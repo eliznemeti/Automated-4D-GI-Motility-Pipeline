@@ -2,6 +2,8 @@
 
 *Abstract Accepted to DDW '25*
 
+![banner-1](banner-1.png)
+
 ### **Pipeline Documentation**
 
 #### **Preprocessing**
